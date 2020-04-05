@@ -14,6 +14,18 @@ module.exports = {
     },
   },
 
+  test: {
+    client: 'mysql',
+    connection: {
+      database: 'be_the_hero_test',
+      user: 'mysql',
+      password: 'mysql'
+    },
+    migrations: {
+      directory: './src/database/migrations'
+    },
+  },
+
   staging: {
     client: 'postgresql',
     connection: {
